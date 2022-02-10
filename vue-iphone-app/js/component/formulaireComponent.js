@@ -6,12 +6,8 @@ const formulaireComponent={
     <label for="Avis">Avis</label>
     <textarea cols="5" rows="5" v-model="avis.msg"></textarea>
     <label for="note">note</label>
-    <select  v-model="avis.note">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-    </select>
+    <input type="range" id="rating" min="1" max="5" v-model.number="rating">
+        
     <button class="button" @click.prevent="save">valider</button>
     </form>`,
     data(){
