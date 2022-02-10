@@ -1,6 +1,6 @@
 const formulaireComponent={
     template: `
-    <form action="#" >
+    <form action="#" @submit.prevent="save">
     <label for="pseudo">Pseudo</label>
     <input type="text" id="pseudo" v-model="avis.username">
     <label for="Avis">Avis</label>
@@ -8,7 +8,7 @@ const formulaireComponent={
     <label for="note">note</label>
     <input type="range" id="rating" min="1" max="5" v-model.number="rating">
         
-    <button class="button" @click.prevent="save">valider</button>
+    <button class="button" >valider</button>
     </form>`,
     data(){
         return{
