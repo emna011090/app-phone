@@ -8,7 +8,7 @@
      
      
   </div>
-  <router-view class="container "/>
+  <router-view class="container"/>
 </template>
 <script>
 import navbar from '@/components/navbar.vue'
